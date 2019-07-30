@@ -367,3 +367,12 @@ Processing by Api::V1::ListsController#index as HTML
 Completed 200 OK in 202ms (Views: 101.1ms | ActiveRecord: 100.8ms)
 
 
+Started GET "/api/v1/lists" for ::1 at 2019-07-29 22:29:19 -0600
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/chasestory/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::ListsController#index as HTML
+  [1m[36mList Load (62.8ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/controllers/api/v1/lists_controller.rb:9
+Completed 200 OK in 96ms (Views: 8.7ms | ActiveRecord: 76.9ms)
+
+

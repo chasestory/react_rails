@@ -13,7 +13,6 @@ class ListsContainer extends Component {
   componentDidMount() {
     axios.get('http://localhost:3001/api/v1/lists')
       .then(response => {
-        console.log(response)
         this.setState({
           lists: response.data
         })
