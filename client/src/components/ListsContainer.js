@@ -17,7 +17,7 @@ class ListsContainer extends Component {
           lists: response.data
         })
       })
-      .catch(error => console.log(error))
+      .catch(error => alert(error))
   }
 
   render() {
