@@ -3,8 +3,8 @@ import ListsContainer from './components/ListsContainer';
 
 function App() {
   return (
-    <ListsContainer>
-    </ListsContainer>
+    <ListsContainer />
+
   );
 }
 
